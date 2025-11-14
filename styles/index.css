@@ -94,18 +94,13 @@ section p {
     color: #FEFAE0; /* Cream */
 }
 
-#Skills {
+#Technologies {
     background-color: #283618; /* Dark green */
     color: #FEFAE0; /* Cream */
 }
 
 #Projects {
     background-color: #FEFAE0; /* Cream */
-    color: #283618; /* Dark green */
-}
-
-#Experience {
-    background-color: #DDA15E; /* Light orange */
     color: #283618; /* Dark green */
 }
 
