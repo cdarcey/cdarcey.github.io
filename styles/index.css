@@ -16,14 +16,16 @@ body {
 /* Fixed Navigation Bar */
 .navbar {
     position: fixed;
-    top: 5px;
-    left: 5px;
-    right: 5px;
+    top: 0px;
+    left: 2%;
+    right: 2%;
     background: #FEFAE0; /* Cream */
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     z-index: 1000;
 }
 
@@ -66,7 +68,7 @@ h1 {
 section {
     min-height: 100vh;
     padding: 80px 40px;
-    margin: 40px 0;
+    margin: 20px 0;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -113,7 +115,7 @@ section p {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 60px;
 }
 
 /* Mobile */
