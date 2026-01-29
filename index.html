@@ -9,55 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
         name="description"
-        content="describe here for SEO purposes">
-    <title>John Doe</title>
+        content="Carey Darcey - Software Developer Portfolio">
+    <title>Carey Darcey</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/project-styles.css">
 </head>
-
-    <!--style guide
-        . clean minimal
-        . monospace fonts (jetbrains mono or fira code)
-        . dark mode
-        . good contrast for readability
-        . responsive/ works on mobile
-    -->
-
-    <!--layout
-        . single page or multi page(possibly better depending on size of project showcases)
-        . fixed nav bar at top
-        . generous white space
-        . card or grid layout for sections
-    -->
-
-    <!--code quality
-        . clean code
-        . organized
-        . comments on code
-    -->
-
-    <!--others
-        . donwloadable to pdf
-        . certifications if applicable
-
-        - possible javascript additions for showcase purposes
-        . Scroll Progress Indicator - Simple, professional, shows event handling
-        . Typewriter Effect - Perfect for your tagline, demonstrates timing control
-        . Skills Filter - Interactive but clean, shows array/event skills
-        . Scroll Animations - Modern, subtle, uses Intersection Observer API
-    -->
-
-    <!--structure plans
-        cdarcey/
-            ├── index.html
-            ├── styles/
-            │   ├── main.css
-            │   └── components.css
-            ├── scripts/
-            │   └── main.js
-            └── assets/
-                ├── images/
-                └── documents/
-    -->
 
 <nav class ="navbar">
     <a href="#About-Me">About Me</a>
@@ -68,64 +24,123 @@
 
 <body>
     <h1>
-        <p id="name">John Doe</p>
-        <p id="tagline">Need creative tagline to put into here</p>
-        <!-- add headshot possibly -->
+        <p id="name">Carey Darcey</p>
     </h1>
 
     <section id="About-Me">
         <h2>About me</h2>
-        <!--About section
-            introdution
-            background/intrests
-            technical phlosophy(what drives me)
-            "keep it personal but professional"-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            In in convallis lectus. Maecenas lectus risus, maximus 
-            ut sem sit amet, ullamcorper elementum enim. Nunc orci 
-            lorem, consequat ac quam suscipit, consequat vehicula eros. 
-            Nullam ultrices a nisl et vestibulum. Nulla in lectus purus. 
-            Pellentesque fringilla tristique euismod. Donec ac auctor nulla</p>
+        <p>I'm a developer focused on learning C and low-level graphics programming. I'm currently working on 
+            a <a href="https://github.com/PilotLightTech/pilotlight" target="_blank">Pilot Light</a> pathfinding 
+            extension and a software renderer called Archery. I'm seeking software engineering opportunities where 
+            I can work on performance-critical or graphics-focused applications. Currently based in Baton Rouge, LA.</p>
     </section>
 
     <section id="Technologies">
         <h2>Technologies</h2>
-        <!--Technical Skills
-            languages
-            Operating systems
-            -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            In in convallis lectus. Maecenas lectus risus, maximus 
-            ut sem sit amet, ullamcorper elementum enim. Nunc orci 
-            lorem, consequat ac quam suscipit, consequat vehicula eros. 
-            Nullam ultrices a nisl et vestibulum. Nulla in lectus purus. 
-            Pellentesque fringilla tristique euismod. Donec ac auctor nulla</p>
-
+        <div class="tech-grid">
+            <div class="tech-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>C <span class="experience">(2 years)</span></li>
+                    <li>HTML/CSS <span class="experience">(minimal)</span></li>
+                    <li>Rust & Python <span class="learning">(currently learning)</span></li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <h3>Graphics</h3>
+                <ul>
+                    <li>Vulkan</li>
+                    <li>2D/3D Rendering</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git/GitHub</li>
+                    <li>VSCode</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="Projects">
         <h2>Projects</h2>
-        <!--projects
-            visuals/ possible embedded videos or playable versions-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            In in convallis lectus. Maecenas lectus risus, maximus 
-            ut sem sit amet, ullamcorper elementum enim. Nunc orci 
-            lorem, consequat ac quam suscipit, consequat vehicula eros. 
-            Nullam ultrices a nisl et vestibulum. Nulla in lectus purus. 
-            Pellentesque fringilla tristique euismod. Donec ac auctor nulla</p>
-
+        <div class="project-grid">
+            
+            <!-- monopoly project card -->
+            <div class="project-card">
+                <div class="project-images">
+                    <div class="project-image">
+                        <img src="./assets/monopoly_screenshot.png" alt="Monopoly game board" onerror="this.style.display='none'">
+                        <div class="project-placeholder">
+                            <p>📸 Add screenshot here</p>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/monopoly_menu_screenshot.png" alt="Monopoly game menu" onerror="this.style.display='none'">
+                        <div class="project-placeholder">
+                            <p>📸 Add screenshot here</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3>Monopoly Game</h3>
+                    
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Vulkan</span>
+                        <span class="tag">Graphics</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                    
+                    <p class="project-description">
+                        Full implementation of Monopoly built from scratch in C using the Pilot Light 
+                        graphics engine. Features include property management, trading system, auctions, 
+                        and complete game rules. Built to learn C programming, memory management, and 
+                        low-level graphics programming.
+                    </p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>2-6 player support with turn-based gameplay</li>
+                            <li>Custom state machine for game flow</li>
+                            <li>Vulkan-backed rendering pipeline</li>
+                            <li>Immediate mode GUI system</li>
+                            <li>Property trading and auction mechanics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/cdarcey/monopoly" target="_blank" class="project-link">
+                            View on GitHub →
+                        </a>
+                        <a href="https://github.com/cdarcey/monopoly#readme" target="_blank" class="project-link">
+                            Read More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- placeholder for future projects -->
+            <div class="project-card project-placeholder-card">
+                <div class="project-content">
+                    <h3>More Projects Coming Soon</h3>
+                    <p>Check back later for additional projects</p>
+                </div>
+            </div>
+            
+        </div>
     </section>
 
     <section id="Contact">
         <h2>Contact</h2>
-        <p>
-            <ul style="list-style-type: none;">
-                <li>John Doe</li>
-                <li>Baton Rouge, LA</li>
-                <li>jDoe@gmail.com</li>
-            </ul>
-        </p>
-
+        <ul class="contact-list">
+            <li>Carey Darcey</li>
+            <li>Baton Rouge, LA</li>
+            <li><a href="mailto:careydarcey@rocketmail.com">careydarcey@rocketmail.com</a></li>
+        </ul>
     </section>
 
     <script src="../src/index.js"></script>
